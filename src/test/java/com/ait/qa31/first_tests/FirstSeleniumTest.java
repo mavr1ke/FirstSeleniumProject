@@ -1,4 +1,4 @@
-package com.ait.qa31;
+package com.ait.qa31.first_tests;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
