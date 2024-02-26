@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 
 import java.util.List;
 
-public class AddProductToCart extends TestCase {
+public class AddProductToCartTests extends TestCase {
 
     @BeforeMethod
     public void precondition() {
