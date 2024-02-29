@@ -17,15 +17,15 @@ public class TestBase {
 
     static WebDriver driver;
 
-    protected static void clickOnRegisterButton() {
+    public static void clickOnRegisterButton() {
         driver.findElement(By.name("register-button")).click();
     }
 
-    protected static void clickOnRegisterLink() {
+    public static void clickOnRegisterLink() {
         driver.findElement(By.cssSelector("[href='/register']")).click();
     }
 
-    protected static void findTenElementsByCssSelector() {
+    public static void findTenElementsByCssSelector() {
         driver.findElement(By.cssSelector(".header-logo"));
         driver.findElement(By.cssSelector("#small-searchterms"));
         driver.findElement(By.cssSelector("a:-webkit-any-link"));
@@ -38,7 +38,7 @@ public class TestBase {
         driver.findElement(By.cssSelector(".nivo-nextNav"));
     }
 
-    protected static void findTenElementsByXpath() {
+    public static void findTenElementsByXpath() {
         driver.findElement(By.xpath("//*[@class='header-logo']"));
         driver.findElement(By.xpath("//*[@id='small-searchterms']"));
         driver.findElement(By.xpath("//*[@href='/gift-cards']"));
@@ -91,7 +91,7 @@ public class TestBase {
         }
     }
 
-    protected boolean isLogOutButtonPresent() {
+    public boolean isLogOutButtonPresent() {
         return isElementPresent(By.cssSelector("[href='/logout']"));
     }
 
@@ -105,41 +105,41 @@ public class TestBase {
         return false;
     }
 
-    protected void fillLoginForm(User user) {
+    public void fillLoginForm(User user) {
         type(By.name("Email"), user.getEmail());
         type(By.name("Password"), user.getPassword());
     }
 
-    protected void clickOnLoginButton() {
+    public void clickOnLoginButton() {
         click(By.cssSelector(".button-1.login-button"));
     }
 
-    protected void clickOnLoginLink() {
+    public void clickOnLoginLink() {
         click(By.cssSelector("[href='/login']"));
     }
 
-    protected void clickOnLogOutButton() {
+    public void clickOnLogOutButton() {
         click(By.cssSelector("[href='/logout']"));
     }
 
-    protected boolean isLoginLinkPresent() {
+    public boolean isLoginLinkPresent() {
         return isElementPresent(By.cssSelector("[href='/login']"));
     }
 
-    protected void clickOnCartLink() {
+    public void clickOnCartLink() {
         click(By.xpath("//span[contains(text(),'Shopping cart')]"));
     }
 
-    protected void clickOnAddSecondProduct() {
+    public void clickOnAddSecondProduct() {
         click(By.xpath("(//input[@class='button-2 product-box-add-to-cart-button'])[2]"));
     }
 
-    protected void removeCart() {
+    public void removeCart() {
         click(By.cssSelector("input[name=removefromcart]"));
         click(By.cssSelector("input[name=updatecart]"));
     }
 
-    protected void fillRegisterForm(User user) {
+    public void fillRegisterForm(User user) {
         click(By.name("FirstName"));
         type(By.name("FirstName"),user.getFirstName());
         click(By.name("LastName"));
