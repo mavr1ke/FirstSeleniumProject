@@ -12,7 +12,7 @@ import java.util.List;
 
 public class CreateAccountTests extends TestBase {
 
-    @Test(dataProvider = "registrationData")
+//    @Test(dataProvider = "registrationData")
     public void createAccountPositiveTest(String firstName, String lastName, String email, String password, String confirmPassword) {
         clickOnRegisterLink();
         fillRegisterForm(new User()

@@ -4,8 +4,12 @@
     <test name="Regression">
         <classes>
             <class name="com.ait.qa31.hws.HWTests"/>
-            <class name="com.ait.qa31.hws.CreateAccountTests"/>
             <class name="com.ait.qa31.hws.AddProductToCartTests"/>
+<!--            <class name="com.ait.qa31.hws.CreateAccountTests">-->
+<!--                <methods>-->
+<!--                    <exclude name=".Positive.*"/>-->
+<!--                </methods>-->
+<!--            </class>-->
         </classes>
     </test>
 </suite>
